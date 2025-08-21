@@ -1,0 +1,21 @@
+view:
+  site:
+    wxPayEnable: ${wx.pay.enable}
+    needLoginArticleReadCount: 30 # 需要登录才能阅读的文章阅读次数
+    zsxqArticleReadCount: 20 # 知识星球用户才能阅读的文章阅读次数统计间隔，单位：分钟
+    needPayArticleReadCount: 20 # 付费文章，未付费可以看到的文章内容
+    websiteName: 技术社区
+    websiteLogoUrl:
+    websiteFaviconIconUrl:
+    zsxqUrl:
+    zsxqPosterUrl: https://sky-thao.oss-cn-qingdao.aliyuncs.com/qrcode_for_gh_f277669bf66a_258.jpg
+    contactMeTitle: 联系我 - tttghao
+    contactMeWxQrCode: https://sky-thao.oss-cn-qingdao.aliyuncs.com/qrcode_for_gh_f277669bf66a_258.jpg
+    contactMeStarQrCode: https://sky-thao.oss-cn-qingdao.aliyuncs.com/qrcode_for_gh_f277669bf66a_258.jpg
+    pageSize: 20
+    cdnImgStyle:
+    websiteRecord: 备案被小人偷袭了
+    wxLoginUrl: http://weixin.qq.com
+    host: http://127.0.0.1:${server.port}
+    welcomeInfo: 欢迎来到技术社区，戳<a href="/article/detail/15">技术社区全方位视角解读</a>了解我们
+    oss:

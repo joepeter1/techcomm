@@ -1,0 +1,2 @@
+alter table user_info add `ip` json not null comment '用户的ip信息' after `extend`;
+update user_info set `ip` = '{"firstIp": "202.196.64.1", "latestIp": "202.196.64.1", "firstRegion": "河南·郑州", "latestRegion": "河南·郑州"}' where id = 1;
