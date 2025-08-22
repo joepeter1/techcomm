@@ -112,8 +112,15 @@ public class ForumDataSourceInitializer {
         // 密码
         String pwd = SpringUtil.getConfigOrElse("spring.datasource.password", "spring.dynamic.datasource.master.password");
         // 创建连接
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://" + url.getHost() + ":" + url.getPort() +
-                "?" + url.getRawQuery(), uname, pwd);
+        String baseUrl = "jdbc:mysql://" + url.getHost() + ":" + url.getPort() + "/";
+        String query = url.getRawQuery();
+        if (query != null && !query.isEmpty()) {
+            baseUrl += "?" + query + "&allowPublicKeyRetrieval=true";
+        } else {
+            baseUrl += "?allowPublicKeyRetrieval=true";
+        }
+
+        try (Connection connection = DriverManager.getConnection(baseUrl, uname, pwd);
              Statement statement = connection.createStatement()) {
             // 查询数据库是否存在
             ResultSet set = statement.executeQuery("select schema_name from information_schema.schemata where schema_name = '" + database + "'");

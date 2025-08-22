@@ -5,15 +5,15 @@ view:
     zsxqArticleReadCount: 20 # 知识星球用户才能阅读的文章阅读次数统计间隔，单位：分钟
     needPayArticleReadCount: 20 # 付费文章，未付费可以看到的文章内容
     websiteName: 技术社区
-    websiteLogoUrl:
-    websiteFaviconIconUrl:
+    websiteLogoUrl: https://techcomm.top/img/logo.svg
+    websiteFaviconIconUrl: https://techcomm.top/img/icon.png
     contactMeTitle: 联系我 - tttghao
     contactMeWxQrCode: https://sky-thao.oss-cn-qingdao.aliyuncs.com/qrcode_for_gh_f277669bf66a_258.jpg
     pageSize: 20
     cdnImgStyle:
     websiteRecord: 备案被小人偷袭了
-    wxLoginUrl: http://weixin.qq.com
-    host:
+    wxLoginUrl: http://weixin.qq.com/r/mp/YEVpcX7EnCPjrToS9xBy
+    host: https://techcomm.top
     welcomeInfo: 欢迎来到技术社区！
     zsxqUrl: https://sky-thao.oss-cn-qingdao.aliyuncs.com/qrcode_for_gh_f277669bf66a_258.jpg
     zsxqPosterUrl: https://sky-thao.oss-cn-qingdao.aliyuncs.com/qrcode_for_gh_f277669bf66a_258.jpg
