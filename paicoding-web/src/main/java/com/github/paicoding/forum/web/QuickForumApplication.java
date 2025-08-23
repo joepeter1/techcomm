@@ -99,4 +99,6 @@ public class QuickForumApplication implements WebMvcConfigurer, ApplicationRunne
         }
         log.info("启动成功，点击进入首页: {}", config.getHost());
     }
+
+    // 测试
 }
