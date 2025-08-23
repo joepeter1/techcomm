@@ -6,7 +6,7 @@ image:
   # 临时存储目录
   tmp-upload-path: /tmp/forum/
   # 图片访问域名
-  cdn-host: https://imgs.hhui.top/
+  cdn-host: https://techcomm.top/
   oss:
     type: local
     endpoint:
@@ -15,3 +15,7 @@ image:
     sk:
     bucket:
     host:
+spring:
+  web:
+      resources:
+        static-locations: classpath:/static/,  file:${image.abs-tmp-path}
