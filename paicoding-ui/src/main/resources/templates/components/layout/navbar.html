@@ -107,10 +107,10 @@
           </li>
           <li class="nav-item vip" th:if="${global.user != null && global.user.starStatus != null}">
             <div th:switch="${global.user.starStatus.code}">
-              <span th:case="2" th:text="星球VIP会员"></span>
+              <span th:case="2" th:text="社区VIP会员"></span>
               <span th:case="1" th:text="待审核"></span>
               <a href="#" data-target="#registerModal" data-toggle="modal" th:case="-1">
-                <span th:text="绑定星球编号"></span>
+                <span th:text="绑定社区编号"></span>
               </a>
             </div>
             <img src="/img/vip.gif" alt="VIP" th:src="${global.siteInfo.oss + '/img/vip.gif'}"/>
@@ -215,7 +215,7 @@
                   </div>
                 </div>
                 <a class="clickable" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">
-                  绑定星球，畅享VIP服务
+                  绑定社区，畅享VIP服务
                 </a>
               </div>
             </div>
